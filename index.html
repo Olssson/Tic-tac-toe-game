@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra kółko i krzyrzyk </title>
+</head>
+<body>
+    <style>
+        html, 
+        body {
+            height: 100%;
+            padding-top: 100px;
+            box-sizing: border-box;
+            background: black;
+
+        }
+        body {
+            background-image: url("we84oy.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .game .row div {
+            height: 100px;
+            width: 100px;
+            background-color:rgba(186, 186, 186, 0.4);
+            margin:2px;
+            border-radius: 30%;
+        }
+        .game .row {
+            display:flex;
+        }
+        .game {
+            margin: 0 auto;
+            width: 300px;
+            padding: 10px;
+        }
+        @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+    </style>
+    <div class="game" onclick="move(event)"> 
+        <div class="row">
+            <div id ="0"></div>
+            <div id ="1"></div>
+            <div id ="2"></div>
+        </div>
+        <div class="row">
+            <div  id ="3"></div>
+            <div  id ="4"></div> 
+            <div  id ="5"></div>
+        </div>
+        <div class="row">
+            <div  id ="6"></div>
+            <div  id ="7"></div>
+            <div  id ="8"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
